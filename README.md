@@ -308,13 +308,11 @@ Disable geocoding with:
 Ahoy.geocode = false
 ```
 
-Change the job queue with:
+By default, the job queue is `:ahoy`. Change this with:
 
 ```ruby
 Ahoy.job_queue = :low_priority
 ```
-
-If you use Sidekiq, add `ahoy` to queues in the configuration file or add `-q ahoy` as an argument when you start sidekiq.
 
 #### Geocoding Performance
 
